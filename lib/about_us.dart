@@ -11,7 +11,7 @@ class AboutUs extends StatelessWidget {
               backgroundColor: Color(0xffDBA13B),
               leading: IconButton(
                   icon: Icon(Icons.arrow_back_ios, color: Colors.white),
-                  onPressed: () => Navigator.of(context).pushNamed('/home')),
+                  onPressed: () => Navigator.pop(context)),
             ),
 
             //Content

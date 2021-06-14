@@ -15,7 +15,7 @@ class Movie extends StatelessWidget {
       appBar: AppBar(
           leading: new IconButton(
               icon: new Icon(Icons.arrow_back_ios, color: Colors.white),
-              onPressed: () => Navigator.of(context).pop()),
+              onPressed: () => Navigator.pop(context)),
           backgroundColor: Color(0xffDBA13B)),
       body: BodyDetail(
         imageLoc: imageLoc,

@@ -78,9 +78,7 @@ class BodyDetail extends StatelessWidget {
                       width: 400,
                       height: 50,
                       child: FlatButton(
-                        onPressed: () {
-                          Navigator.of(context).pushNamed('/home');
-                        },
+                        onPressed: () => Navigator.pop(context),
                         child: Text(
                           "Submit",
                           style:

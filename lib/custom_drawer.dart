@@ -1,3 +1,4 @@
+import 'package:bj_movies/home.dart';
 import 'package:flutter/material.dart';
 
 class CustomDrawer extends StatelessWidget {
@@ -50,7 +51,12 @@ class CustomDrawer extends StatelessWidget {
                         fontWeight: FontWeight.w700),
                   ),
                   onTap: () {
-                    Navigator.of(context).pushNamed('/home');
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => Home(
+                                  username: username,
+                                )));
                   },
                 ),
                 ListTile(
